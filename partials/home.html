@@ -1,0 +1,258 @@
+<section class="home">
+
+    <!-- ==== HEADERWRAP ==== -->
+    <div class="headerwrap" id="home">
+        <header class="clearfix">
+            <h1>Le génie du développement durable</h1>
+            <p>Lorem ipsum dolor sit amet, cu menandri molestiae voluptaria eam,<br>
+                invidunt reprehendunt nec ei. Sonet regione consulatu vel id.
+            </p>
+
+            <div ng-controller="ScrollCtrl">
+
+                <a href="#about" ng-click="gotoElement('about')" class="smoothScroll btn btn-lg">Notre mission</a> 
+            </div>
+        </header>
+    </div>
+    <!-- /headerwrap --> 
+
+    <!-- ==== ABOUT ==== -->
+    <div id="about">
+        <div class="container">
+            <div class="row white">
+                <h2 class="centered">NOTRE MISSION</h2>
+                <hr>
+                <div class="col-md-6"> <img class="img-responsive" src="web/img/about/about1.jpg" align=""> </div>
+                <div class="col-md-6">
+                    <h3>Objectifs</h3>
+                    <p>Les principaux objectifs du projet SerreÉTS sont de rallier une communauté multidisciplinaire d'étudiants en ingénierie à l'ÉTS pour concevoir et construire des serres écoénergétiques à environnement contrôlé et développer des systèmes de production agroalimentaire urbains dans une optique de rentabilité et de responsabilité sociale et environnementale.</p>
+                    <ul>
+                        <li>Collaborer avec des spécialistes du domaine et partager le fruit de nos recherches avec l'industrie et la communauté.</li>
+                        <li>Promouvoir l'indépendance alimentaire en produisant localement nos aliments grâce à des technologies alternatives tout aussi efficaces qu'écologiques.</li>
+                        <li>Rendre possible l'accès à des fruits et légumes frais et d'une grande variété tout au long de l’année.</li>
+                    </ul>
+                </div>
+            </div>
+            <!-- row --> 
+        </div>
+    </div>
+    <!-- container --> 
+
+    <!-- ==== SERVICES ==== -->
+    <div id="services">
+        <div class="container">
+            <div class="row">
+                <h2 class="centered">NOTRE SERRE</h2>
+                <hr>
+                <div class="col-lg-8 col-lg-offset-2">
+                    <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+                <div class="col-lg-4 callout"> <i class="fa fa-pagelines fa-3x"></i>
+                    <h3>Environnement</h3>
+                    <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
+                </div>
+                <div class="col-lg-4 callout"> <i class="fa fa-gears fa-3x"></i>
+                    <h3>Technologies</h3>
+                    <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
+                </div>
+                <div class="col-lg-4 callout"> <i class="fa fa-line-chart fa-3x"></i>
+                    <h3>Analyse en temps réel</h3>
+                    <p>Erat imperdiet dissentias ea usu, alia aliquid corrumpit ea qui. Eu vim oratio conclusionemque, vel at errem nominavi delicatissimi.</p>
+                </div>
+            </div>
+            <!-- row --> 
+            <!--a href="../serreETS-client_web/" class="btn btn-lg">État de la serre</a-->
+        </div>
+    </div>
+    <!-- container --> 
+
+    <!-- ==== PORTFOLIO ==== -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="row">
+                <h2 class="centered">NOS PROJETS</h2>
+                <hr>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+            <!-- /row -->
+            <div class="container">
+                <div class="row">
+                    <div class="clearfix">
+
+                    </div>
+                </div>
+                <!-- /row --> 
+            </div>
+            <!-- /row --> 
+        </div>
+    </div>
+    <!-- /container --> 
+
+    <!-- ==== TEAM MEMBERS ==== -->
+    <div id="team">
+        <div class="container">
+            <div class="row centered">
+                <h2 class="centered">NOTRE ÉQUIPE</h2>
+                <hr>
+
+                <div class="clearfix">
+                    <div ng-app="" ng-controller="memberCtrl"> 
+
+
+
+                        <div class="clearfix">
+
+                            <div class="col-lg-3 centered" ng-repeat="x in member">
+                                <img class="img img-circle" src="web/img/team/default-user.png" height="120px" width="120px" alt="">
+                                <h4><strong>{{ x.name}}</strong></h4>
+                                <!--p>{{ x.role}}</p-->
+                            </div>
+
+                        </div>
+                        <!--div id="members-wrapper" class="clearfix" style="display: none;">
+                            
+                            <div class="col-lg-3 centered">
+                                <img class="img img-circle" src="img/team/default-user.png" height="120px" width="120px" alt="">
+                                <h4><strong><?php echo $person_name; ?></strong></h4>
+                                <p><?php echo $person_a['role']; ?></p>
+                            </div>
+                           
+                        </div-->
+
+
+
+                    </div>
+                </div>
+                <div id="members-wrapper" class="clearfix" style="display: none;">
+
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <span id="see-more" style="display: block; cursor: pointer; text-align: center;"><i class="fa fa-angle-double-down"></i></span>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>
+        </div>
+        <!-- row --> 
+    </div>
+    <!-- container -->
+
+    <!-- ==== RECRUTMENT ==== -->
+    <div id="enlisting">
+        <div class="container">
+            <div class="row white">
+                <h2 class="centered">RECRUTEMENT</h2>
+                <hr>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+
+                    <form id="enlisting" method="post" class="form" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input class="form-control" id="firstName" name="firstName" placeholder="Prénom" type="text" required />
+                            </div>
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input class="form-control" id="lastName" name="lastName" placeholder="Nom" type="text" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <select class="form-control" id="program" name="program" required>
+                                    <option>Programme d'études</option>
+                                    <option>Génie construction</option>
+                                    <option>Génie mécanique</option>
+                                    <option>Génie électrique</option>
+                                    <option>Génie production automatisée</option>
+                                    <option>Génie gestion des opérations</option>
+                                    <option>Génie logiciel</option>
+                                    <option>Génie technologie de l'information</option>
+                                </select>
+                            </div>
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input class="form-control" id="email" name="email" placeholder="Courriel" type="email" required />
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" id="message" name="messageEnlisting" placeholder="Message" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <button class="btn btn btn-lg" type="submit" name="enlisting-submit">Envoyer</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <!-- row --> 
+        </div>
+    </div>
+    <!-- container --> 
+
+
+    <!-- ==== CONTACT ==== -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <h2 class="centered">CONTACTEZ-NOUS</h2>
+                <hr>
+                <div class="col-md-6 centered"> <i class="fa fa-map-marker fa-2x"></i>
+                    <p>1100 rue Notre-Dame Ouest, Local A-1172<br />
+                        Montréal, QC H3C 1K3, Canada
+                    </p>
+                </div>
+                <div class="col-md-6"> <i class="fa fa-envelope-o fa-2x"></i>
+                    <p>serreets@gmail.com</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+
+                    <form id="contact" method="post" class="form" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required />
+                            </div>
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input class="form-control" id="email" name="emailFrom" placeholder="Courriel" type="email" required />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12 form-group">
+                                <select class="form-control" id="sel1" name="subject" required>
+                                    <option>Sujet</option>
+                                    <option>Question</option>
+                                    <option>Partenariat</option>
+                                    <option>Financement</option>
+                                    <option>Recrutement</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <textarea class="form-control" id="message" name="messageContact" placeholder="Message" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <button class="btn btn btn-lg" type="submit" name="contactus-submit">Envoyer</button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+            <!-- form --> 
+        </div>
+    </div>
+    <!-- row --> 
+
+</div>
+
+
+
+</section>

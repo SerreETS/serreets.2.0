@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="serreETSApp">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="SerreETS">
+        <meta name="author" content="ETS">
+        <title>SerreÉTS</title>
+
+        <!-- CSS -->
+        <link href="web/css/bootstrap.css" rel="stylesheet">
+        <link href="web/css/font-awesome.min.css" rel="stylesheet">
+        
+        <link href="web/css/main.css" rel="stylesheet">
+        
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
+
+        <!-- JS -->
+        <script type="text/javascript" src="js/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="js/lib/angular.js"></script>
+        <script type="text/javascript" src="js/lib/angular-route.js"></script>
+        <script type="text/javascript" src="js/lib/ui-bootstrap-tpls-0.14.3.min.js"></script>
+        <script type="text/javascript" src="js/lib/modernizr.custom.js"></script>
+        
+        
+        
+        
+        <script type="text/javascript" src="js/contact.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    </head>
+
+    <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+        <!-- header -->
+        <div ng-include src="'partials/includes/header.html'"></div>
+
+        <!-- content -->
+        <div ng-view></div>
+
+        <!-- footer -->
+        <div ng-include src="'partials/includes/footer.html'"></div>
+
+    </body>
+
+    <!--script>
+      /*$("#see-more").click(function () {
+          $("#members-wrapper").slideToggle("slow");
+          $("#see-more i").hide();
+      });*/
+    </script-->
+
+</html>
