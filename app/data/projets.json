@@ -1,0 +1,16 @@
+{
+    "projets": [
+        {
+            "nom": "Projet A",
+            "description": "Directeur technique «Gestion énergétique et qualité de l'air",
+            "images": "folio01.jpg",
+            "url" : "projeta"
+        },
+        {
+            "nom": "Projet B",
+            "description": "Chef d'équipe «Systèmes expérimentaux agricoles»",
+            "images": "folio01.jpg",
+            "url" : "projetb"
+        }
+    ]
+}

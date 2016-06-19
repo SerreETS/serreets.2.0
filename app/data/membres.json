@@ -1,0 +1,29 @@
+{
+    "membres": [
+        {
+            "nom": "Marc-Antoine Meilleur",
+            "role": "Directeur technique «Gestion énergétique et qualité de l'air",
+            "url": "marc-antoine.jpg"
+        },
+        {
+            "nom": "Joël Gagnon",
+            "role": "Chef d'équipe «Systèmes expérimentaux agricoles»",
+            "url": "joel.jpg"
+        },
+        {
+            "nom": "Renato Tuesta-Vilca",
+            "role": "Chef de projet «production d'algue»",
+            "url": "renato.jpg"
+        },
+        {
+            "nom": "William Paradis",
+            "role": "Chef d'équipe «Design de serre et construction»",
+            "url": "default-user.png"
+        },
+        {
+            "nom": "Jérôme Forest-Lamoureux",
+            "role": "Chef d'équipe «Design de serre et construction»",
+            "url": "jerome.jpg"
+        }
+    ]
+}

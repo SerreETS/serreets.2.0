@@ -1,0 +1,58 @@
+<!-- ==== CONTACT ==== -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <h2 class="centered">CONTACTEZ-NOUS</h2>
+            <hr>
+            <div class="col-md-6 centered"> <i class="fa fa-map-marker fa-2x"></i>
+                <p>1100 rue Notre-Dame Ouest, Local A-1172<br />
+                    Montréal, QC H3C 1K3, Canada
+                </p>
+            </div>
+            <div class="col-md-6"> <i class="fa fa-envelope-o fa-2x"></i>
+                <p><a href='mailto:serreets@gmail.com'>serreets@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 centered">
+                <p>
+                    Si vous avez des questions à propos du club, de nos projets ou tout autre sujet, n'hésitez pas à nous contacter.
+                </p>
+
+                <form id="contact" method="post" class="form" role="form" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6 form-group">
+                            <input class="form-control" id="name" name="name" placeholder="Nom" type="text" required />
+                        </div>
+                        <div class="col-xs-6 col-md-6 form-group">
+                            <input class="form-control" id="email" name="emailFrom" placeholder="Courriel" type="email" required />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12 form-group">
+                            <select class="form-control" id="sel1" name="subject" required>
+                                <option>Sujet</option>
+                                <option>Question</option>
+                                <option>Partenariat</option>
+                                <option>Financement</option>
+                                <option>Recrutement</option>
+                            </select>
+                        </div>
+
+                    </div>
+                    <textarea class="form-control" id="message" name="messageContact" placeholder="Message" rows="5"></textarea>
+                    <div class="row">
+                        <div class="col-xs-12 col-md-12">
+                            <button class="btn btn btn-lg" type="submit" name="contactus-submit">Envoyer</button>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+        <!-- form --> 
+    </div>
+</div>
+<!-- row --> 

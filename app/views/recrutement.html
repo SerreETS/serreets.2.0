@@ -1,0 +1,49 @@
+<!-- ==== RECRUTMENT ==== -->
+    <div id="enlisting">
+        <div class="container">
+            <div class="row white">
+                <h2 class="centered">RECRUTEMENT</h2>
+                <hr>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+                    <p class="large">
+                        Nous sommes toujours à la recherche de nouveaux membres, envoyez-nous vos coordonnées et nous vous contacterons.
+                    </p>
+                </div>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+
+                    <div id="enlisting" class="form" ng-controller="RecrutementCtrl">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input type="text" class="form-control" id="firstName" ng-model="firstName" placeholder="Prénom"  />
+                            </div>
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input type="text" class="form-control" id="firstName" ng-model="lastName" placeholder="Prénom"  />
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <select class="form-control" id="program" ng-model="program" ng-options="option.name for option in options"></select>
+                            </div>
+                            <div class="col-xs-6 col-md-6 form-group">
+                                <input type="email" class="form-control" id="email" ng-model="email" placeholder="Courriel" />
+                            </div>
+                        </div>
+
+                        <textarea class="form-control" id="message" ng-model="messageEnlisting" placeholder="Message" rows="5"></textarea>
+                        <div class="row">
+                            <div class="col-xs-12 col-md-12">
+                                <button class="btn btn btn-lg" name="enlisting-submit" ng-click="sendRecrutementMail()">Envoyer</button>
+                                <br />
+                                <br />
+                                <span id="message">{{message}}</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <!-- row --> 
+        </div>
+    </div>
+    <!-- container --> 
