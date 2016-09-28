@@ -1,16 +1,64 @@
 {
     "projets": [
         {
-            "nom": "Projet A",
-            "description": "Directeur technique «Gestion énergétique et qualité de l'air",
-            "images": "folio01.jpg",
-            "url" : "projeta"
+            "nom": "Aquaponie UQAM",
+            "description": "Une microferme aquaponique sera installée cette année dans le Quartier des spectacles. Le but de cette microferme est de démocratiser l’aquaponie au Québec tout en utilisant cette plateforme pour sensibiliser la population aux différents enjeux environnementaux liés à l’agro-industrie.",
+            "images": "aquaponie-uqam.png",
+            "url" : "aquaponie-uqam"
         },
         {
-            "nom": "Projet B",
-            "description": "Chef d'équipe «Systèmes expérimentaux agricoles»",
-            "images": "folio01.jpg",
-            "url" : "projetb"
+            "nom": "Bac terreau à double fond",
+            "description": "Ce concept sera testé en laboratoire à l’hiver 2016 et nous permettra aussi de développer un système d'éclairage DEL conçu 100% par l’équipe de SerreÉTS pour offrir un système amovible individuel complet qui pourrait être utilisé à la maison par exemple pour faire pousser des tomates durant l’hiver.",
+            "images": "bac-terreau-double-fond.jpg",
+            "url" : "bac-terreau-double-fond"
+        },
+        {
+            "nom": "Bâtiment 7",
+            "description": "Le projet du Bâtiment 7 consiste à donner une deuxième vie au bâtiment situé au 1830 rue le Ber. De ce fait, nous avons reçu le mandat d’évaluer et de proposer des rénovations potentielles pour les systèmes mécaniques du bâtiment ainsi que des mesures d’efficacités énergétiques.",
+            "images": "batiment-7-3.jpg",
+            "url" : "batiment-7"
+        },
+        {
+            "nom": "Culture d'algue",
+            "description": "Notre projet agricole expérimental le plus singulier est sans doute celui de production d’algue. Ce petit système vise à expérimenter certaines souches de microalgues afin de trouver un fournisseur fiable et à faire nos premiers pas pour comprendre cette forme de vie méconnue en occident.",
+            "images": "culture-algue-1.jpg",
+            "url" : "culture-algue"
+        },
+        {
+            "nom": "ÉAU - gestion énergétique",
+            "description": "L’entreprise ÉAU possède déjà une serre de démonstration qui a permis la promotion de l’aquaponie auprès du public tout l’été au marché Jean-Talon. Elle possède une des meilleures expertises dans la gestion des procédés.",
+            "images": "eau-gestion-energetique.jpg",
+            "url" : "eau-gestion-energetique"
+        },
+        {
+            "nom": "GREB",
+            "description": "Le projet vise à concevoir une résidence unifamiliale éco énergétique pour un membre du GREB (Groupe de recherches écologiques de La Baie) et à faciliter la recommandation de la technique GREB au niveau des professionnels de la construction au Québec.",
+            "images": "greb.jpg",
+            "url" : "greb"
+        },
+        {
+            "nom": "Mur solaire",
+            "description": "Le but de ce projet de recherche est de vérifier s’il est plus économique financièrement, dans un contexte de mûr solaire de faibles dimensions, de fabriquer un mur solaire avec un absorbeur fait avec ou sans matériaux recyclés. ",
+            "images": "mur-solaire-1.jpg",
+            "url" : "mur-solaire"
+        },
+        {
+            "nom": "Conception d’une serre solaire",
+            "description": "Conception d'une serre solaire pour les habitants d'Ayachuco au Pérou avec l'objectif de faire une différence au niveau de l'économie d'énergie, de l'amélioration de la santé ainsi que de la sécurité alimentaire au sein de cette communauté.",
+            "images": "perou-2016-4.jpg",
+            "url" : "perou-2016"
+        },
+        {
+            "nom": "Conception d'un four solaire",
+            "description": "Le projet présenté a comme objectif de développer un modèle de four solaire passif utilisé dans un pays émergent d’Amérique du Sud. L’objectif est d’accroître l’accessibilité des communautés à des énergies alternatives renouvelables et accessibles.",
+            "images": "perou-2017-2.jpg",
+            "url" : "perou-2017"
+        },
+        {
+            "nom": "Système hydroponique",
+            "description": "Dans le but d’acquérir de l’expérience en conception et fabrication de systèmes agricoles expérimentaux avant de passer aux plus gros systèmes qui seront dans la future serre, notre équipe a décidé de concevoir et réaliser un système hydroponique expérimental.",
+            "images": "systeme-hydroponique-2.jpg",
+            "url" : "systeme-hydroponique"
         }
     ]
 }

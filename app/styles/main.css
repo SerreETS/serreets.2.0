@@ -18,10 +18,7 @@ hr {
     border: 0;
     margin: 3em 0;
     padding: 0;
-    background-image: -webkit-linear-gradient(left, #fff, #ccc, #fff);
-    background-image: -moz-linear-gradient(left, #fff, #ccc, #fff);
-    background-image: -ms-linear-gradient(left, #fff, #ccc, #fff);
-    background-image: -o-linear-gradient(left, #fff, #ccc, #fff);
+    background-color:#ccc;
     width: 50%;
     left: 25%;
     position: relative;
@@ -89,6 +86,9 @@ body {
 }
 a img {
     background: white;
+}
+#footerwrap a img {
+    background: none;
 }
 .odd a img {
     background: #f5f5f5;
@@ -255,6 +255,24 @@ a:before, a:after {
     padding-top:4px!important;
 }
 
+span.source{
+    font-size: 11px;
+}
+
+span.source a:link, span.source a:visited{
+    color:#555;
+    text-decoration: underline;;
+}
+
+span.source a:hover, span.source a:active{
+    text-decoration: none;
+}
+
+span.background-source {
+  position: absolute;
+  right:15px;
+}
+
 #about {
     background: #fff;
     padding: 60px 0;
@@ -309,12 +327,15 @@ a:before, a:after {
 #team .engineering-program{
     display: block;
 }
-#portfolio {
+#project {
     background: #fff;
     padding: 60px 0;
 }
-#portfolio .btn-default {
+#project .btn-default {
     border: 0;
+}
+#project .projectBox{
+    margin-bottom: 40px;
 }
 #enlisting {
     background: #fff;

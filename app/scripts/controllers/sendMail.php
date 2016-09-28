@@ -1,65 +1,41 @@
 <?php
 
-//if "email" variable is filled out, send email
-$postdata = file_get_contents("php://input");
-$request = json_decode($postdata);
-@$firstName = $request->firstName;
-@$lastName = $request->lastName;
-@$program = $request->program;
-@$email = $request->email;
-@$messageEmail = $request->messageEmail;
+  $email_to = "laurianemichaud@hotmail.com";
 
-/* Set e-mail recipient */
-$myemail  = "laurianemichaud@hotmail.com";
-$subject = "Recrutement";
+  $email_subject = "SerreÉTS - Recrutement";
 
-/* Let's prepare the message for the e-mail */
-$message = "Hello!
+	$postdata = file_get_contents("php://input");
+	$request = json_decode($postdata);
+	@$first_name = $request->firstName;
+	@$last_name = $request->lastName;
+	@$program = $request->program;
+	@$email_from = $request->email;
+	@$message_email = $request->messageEmail;
 
-Your contact form has been submitted by:
 
-Name: $firstName
-E-mail: $email
-Program: $program
+  $email_message = "<h4>SerreÉTS</h4>";
+  $email_message .= "Date : " . date("Y-m-d H:i:s") . "<br />";
+  $email_message .= "Objet : Demande pour rejoindre le club<br />";
+  $email_message .= "<hr><br />";
+  $email_message .= "Bonjour,<br /><br />";
+  $email_message .= "La personne suivante a fait une demande pour rejoindre SerreÉTS <br /><br />";
 
-Comments:
-$messageEmail
+  function clean_string($string) {
+    $bad = array("content-type", "bcc:", "to:", "cc:", "href");
+    return str_replace($bad, "", $string);
+  }
 
-End of message
-";
+  $email_message .= "Nom : " . clean_string($first_name) . " " . clean_string($last_name) . "<br />";
+  $email_message .= "Courriel : " . clean_string($email_from) . "<br />";
+  $email_message .= "Département : " . clean_string($program) . "<br />";
+  $email_message .= "Description de la demande : " . clean_string($message_email) . "<br /><br />";
+  $email_message .= "Merci,<br />";
+  $email_message .= "le site de SerreÉTS";
 
-/* Send the message using mail() function */
-mail($myemail, $subject, $message);
+  // create email headers
+  $headers = 'From: ' . $email_from . "\r\n" .
+          'Reply-To: ' . $email_from . "\r\n" .
+          "Content-type: text/html; charset=UTF-8" . "\r\n" .
+          'X-Mailer: PHP/' . phpversion();
 
-/* Redirect visitor to the thank you page */
-header('Location: thanks.htm');
-exit();
-
-/* Functions we used */
-function check_input($data, $problem='')
-{
-    $data = trim($data);
-    $data = stripslashes($data);
-    $data = htmlspecialchars($data);
-    if ($problem && strlen($data) == 0)
-    {
-        show_error($problem);
-    }
-    return $data;
-}
-
-function show_error($myError)
-{
-?>
-    <html>
-    <body>
-
-    <b>Please correct the following error:</b><br />
-    <?php echo $myError; ?>
-
-    </body>
-    </html>
-<?php
-exit();
-}
-?>
+  @mail($email_to, $email_subject, $email_message, $headers);

@@ -8,37 +8,58 @@
  * Controller of the serreetsApp
  */
 angular.module('serreetsApp')
+
         .controller('ContactCtrl', function ($scope, $http) {
-    $scope.result = 'hidden'
-    $scope.resultMessage;
-    $scope.formData; //formData is an object holding the name, email, subject, and message
-    $scope.submitButtonDisabled = false;
-    $scope.submitted = false; //used so that form errors are shown only after the form has been submitted
-    $scope.submit = function(contactform) {
-        $scope.submitted = true;
-        $scope.submitButtonDisabled = true;
-        if (contactform.$valid) {
-            $http({
-                method  : 'POST',
-                url     : 'contact-form.php',
-                data    : $.param($scope.formData),  //param method from jQuery
-                headers : { 'Content-Type': 'application/x-www-form-urlencoded' }  //set the headers so angular passing info as form data (not request payload)
-            }).success(function(data){
-                console.log(data);
-                if (data.success) { //success comes from the return json object
-                    $scope.submitButtonDisabled = true;
-                    $scope.resultMessage = data.message;
-                    $scope.result='bg-success';
-                } else {
-                    $scope.submitButtonDisabled = false;
-                    $scope.resultMessage = data.message;
-                    $scope.result='bg-danger';
+            $scope.options = [
+                {
+                    name: "Sujet",
+                    value: "something-cool-value"
+                },
+                {
+                    name: "Question",
+                    value: "something-else-value"
+                },
+                {
+                    name: "Partenariat",
+                    value: "something-else-value"
+                },
+                {
+                    name: "Financement",
+                    value: "something-else-value"
+                },
+                {
+                    name: "Recrutement",
+                    value: "something-else-value"
                 }
-            });
-        } else {
-            $scope.submitButtonDisabled = false;
-            $scope.resultMessage = 'Failed :( Please fill out all the fields.';
-            $scope.result='bg-danger';
-        }
-    }
-});
+            ];
+
+            $scope.subject = $scope.options[0];
+
+            $scope.sendContactMail = function () {
+                $scope.message = "";
+
+                    var request = $http({
+                        method: "post",
+                        url: "scripts/controllers/sendMailContact.php",
+                        data: {
+                            name : $scope.name,
+                            email : $scope.email,
+                            subject : $scope.subject.name,
+                            messageEmail: $scope.messageContact
+                        },
+                        headers: {'Content-Type': 'application/x-www-form-urlencoded'}
+                    });
+
+                    console.log(request);
+
+                    request.success(function (data) {
+                        $scope.message = "Votre message a bien été envoyée. Merci! " + data;
+                    });
+
+                    request.error(function (data){
+                        $scope.message = "Il y a une erreur dans la soumission du formulaire. ";
+                    })
+
+            }
+
+        });

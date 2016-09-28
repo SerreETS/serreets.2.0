@@ -14,18 +14,18 @@
                     <div id="enlisting" class="form" ng-controller="RecrutementCtrl">
                         <div class="row">
                             <div class="col-xs-6 col-md-6 form-group">
-                                <input type="text" class="form-control" id="firstName" ng-model="firstName" placeholder="Prénom"  />
+                                <input type="text" class="form-control" id="firstName" ng-model="firstName" placeholder="Prénom" required />
                             </div>
                             <div class="col-xs-6 col-md-6 form-group">
-                                <input type="text" class="form-control" id="firstName" ng-model="lastName" placeholder="Prénom"  />
+                                <input type="text" class="form-control" id="lastName" ng-model="lastName" placeholder="Nom" required />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-xs-6 col-md-6 form-group">
-                                <select class="form-control" id="program" ng-model="program" ng-options="option.name for option in options"></select>
+                                <select class="form-control" id="program" ng-model="program" ng-options="option.name for option in options" required ></select>
                             </div>
                             <div class="col-xs-6 col-md-6 form-group">
-                                <input type="email" class="form-control" id="email" ng-model="email" placeholder="Courriel" />
+                                <input type="email" class="form-control" id="email" ng-model="email" placeholder="Courriel" required/>
                             </div>
                         </div>
 
