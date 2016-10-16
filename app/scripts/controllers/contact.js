@@ -45,7 +45,7 @@ angular.module('serreetsApp')
                             name : $scope.name,
                             email : $scope.email,
                             subject : $scope.subject.name,
-                            messageEmail: $scope.messageContact
+                            messageContact: $scope.messageContact
                         },
                         headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                     });

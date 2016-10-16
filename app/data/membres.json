@@ -2,38 +2,43 @@
     "membres": [
         {
             "nom": "Marc-Antoine Meilleur",
-            "role": "Directeur technique «Gestion énergétique et qualité de l'air | Chargé des opérations",
+            "role": "Cofondateur, Gestionnaire du projet «Mur solaire»",
             "image": "marc-antoine.jpg"
         },
         {
             "nom": "Joël Gagnon",
-            "role": "Chef d'équipe «Systèmes expérimentaux agricoles | Chargé des opérations»",
+            "role": "Cofondateur, Chargé des opérations",
             "image": "joel.jpg"
         },
         {
-            "nom": "Renato Tuesta-Vilca",
-            "role": "Chef de projet «production d'algue»",
-            "image": "renato.jpg"
-        },
-        {
-            "nom": "William Paradis",
-            "role": "Chef d'équipe «Design de serre et construction | Chargé des de la communication",
-            "image": "default-user.png"
-        },
-        {
-            "nom": "Jérôme Forest-Lamoureux",
-            "role": "Chef d'équipe «Programmation et automatisation»",
-            "image": "jerome.jpg"
+            "nom": "Felixe Girard",
+            "role": "Chargée de la communication",
+            "image": "felixe.jpg"
         },
         {
             "nom": "Saïd Abdul Kader",
-            "role": "Trésorier",
-            "image": "default-user.png"
+            "role": "Chargé de la trésorerie",
+            "image": "said.jpg"
         },
         {
             "nom": "Sébastien Arsenault",
-            "role": "Chargé du financement",
-            "image": "default-user.png"
-        }
+            "role": "Chargé du financement, Gestionnaire du projet «Bacs à double fond»",
+            "image": "sebastien.jpg"
+        },
+		{
+            "nom": "Pierre-Luc Harvey",
+            "role": "Gestionnaire du projet «GREB»",
+            "image": "pierre-luc.jpg"
+        },
+		{
+            "nom": "Frédéric Léveillé",
+            "role": "Chargé des opérations, Gestionnaire du projet «ÉAU - Gestion énergétique»",
+            "image": "frederic.jpg"
+        },
+		{
+			"nom" : "Olivier Trépanier",
+			"role" : "Gestionnaire du projet «Synthèse hydroponique» et du projet «Système de culture d'algues»",
+			"image": "olivier.jpg"
+		}
     ]
 }

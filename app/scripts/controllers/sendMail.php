@@ -1,6 +1,6 @@
 <?php
 
-  $email_to = "laurianemichaud@hotmail.com";
+  $email_to = "club.serreets@etsmtl.net";
 
   $email_subject = "SerreÉTS - Recrutement";
 
