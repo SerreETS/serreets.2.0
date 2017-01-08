@@ -15,7 +15,8 @@ var app = angular
             'ngResource',
             'ngRoute',
             'ngSanitize',
-            'ngTouch'
+            'ngTouch',
+            'angular-timeline',
         ])
 
 app.config(function ($routeProvider) {
@@ -46,6 +47,11 @@ app.config(function ($routeProvider) {
                 templateUrl: 'views/recrutement.html',
                 controller: 'RecrutementCtrl',
                 controllerAs: 'recrutement'
+            })
+            .when('/publication', {
+                templateUrl: 'views/publication.html',
+                controller: 'PublicationCtrl',
+                controllerAs: 'publication'
             })
             .when('/contact', {
                 templateUrl: 'views/contact.html',

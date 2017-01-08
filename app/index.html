@@ -9,6 +9,7 @@
         <!-- build:css(.) styles/vendor.css -->
         <!-- bower:css -->
         <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="bower_components/angular-timeline/dist/angular-timeline.css" />
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
@@ -42,6 +43,7 @@
                             <li><a is-active-nav ng-href="#equipe" data-toggle="collapse" data-target=".navbar-collapse">Notre équipe</a></li>
                             <li><a is-active-nav ng-href="#evenement" data-toggle="collapse" data-target=".navbar-collapse">Événements</a></li>
                             <li><a is-active-nav ng-href="#recrutement" data-toggle="collapse" data-target=".navbar-collapse">Recrutement</a></li>
+                            <li><a is-active-nav ng-href="#publication" data-toggle="collapse" data-target=".navbar-collapse">Publications</a></li>
                             <li><a is-active-nav ng-href="#contact" data-toggle="collapse" data-target=".navbar-collapse">Contactez-nous</a></li>
                         </ul>
 
@@ -65,12 +67,13 @@
                     <div class="col-md-4">
                         <ul class="list-inline social-buttons">
                             <li><a href="https://www.facebook.com/SerreETS" target="_blank"><i class="fa fa-facebook"></i></a> </li>
+                            <li><a href="http://www.etsmtl.ca/Etudiants-actuels/Baccalaureat/Vie-etudiante/Clubs-regroupements-etudiants/SerreETS" target="_blank"><span class="ets_icon"></span></a> </li>
                             <li><a href="https://github.com/SerreETS" target="_blank"><i class="fa fa-github"></i></a> </li>
                         </ul>
                     </div>
                     <div class="col-md-4">
                         <span class="sponsors">
-                            Commanditaires
+                            Nos partenaires
                         </span>
                         <div class="logo-sponsor">
                             <a href="http://www.etsmtl.ca/" target="_blank"><img src="images/ets_logo_footer.png" width="111" height="70" alt="École de Technologie supérieure"></a>
@@ -107,6 +110,7 @@
         <script src="bower_components/angular-route/angular-route.js"></script>
         <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="bower_components/angular-touch/angular-touch.js"></script>
+        <script src="bower_components/angular-timeline/dist/angular-timeline.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -119,6 +123,7 @@
         <script src="scripts/controllers/equipe.js"></script>
         <script src="scripts/controllers/evenement.js"></script>
         <script src="scripts/controllers/recrutement.js"></script>
+        <script src="scripts/controllers/publication.js"></script>
         <script src="scripts/controllers/contact.js"></script>
         <!-- endbuild -->
     </body>
