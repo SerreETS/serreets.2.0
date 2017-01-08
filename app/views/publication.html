@@ -1,0 +1,37 @@
+<!-- ==== RECRUTMENT ==== -->
+    <div id="publication">
+        <div class="container">
+            <div class="row white">
+                <h2 class="centered">PUBLICATIONS</h2>
+                <hr>
+                <div class="col-lg-8 col-lg-offset-2 centered">
+
+
+                  <p>
+                      Tenez-vous à jour des derniers développements concernant les projets en cours, des événements importants qui ont eu lieu ou encore des documents publiés par les membres du club.
+                  </p>
+                  <br />
+
+                    <timeline>
+                        <timeline-event ng-repeat="event in events" side="">
+                          <timeline-badge class="{{event.badgeClass}}">
+
+                          </timeline-badge>
+                          <timeline-panel class="{{event.badgeClass}}">
+                            <timeline-heading>
+                              <h4>{{event.title}}</h4>
+                            </timeline-heading>
+                            <p>{{event.content}}</p>
+                            <timeline-footer ng-if="event.footerContentHtml">
+                              <span ng-bind-html="event.footerContentHtml"></span>
+                            </timeline-footer>
+                          </timeline-panel>
+                        </timeline-event>
+                    </timeline>
+                </div>
+
+            </div>
+            <!-- row -->
+        </div>
+    </div>
+    <!-- container -->
